@@ -1,0 +1,193 @@
+$briefTextColor: #000000 !default;
+$captionTableColor: #000000!default;
+$colorTableBorder: #ffffff !default;
+$defaultTransformText: none !default;
+$transformText: uppercase !default;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $colorMain;
+  color: $colorText;
+}
+@mixin brief {
+  background-color: $briefBg;
+  color: $briefTextColor;
+  width: $briefWidth;
+  margin-bottom: $briefBottom;
+}
+@mixin image {
+  padding: 2px;
+  border: 1px solid $imgBorderColor;
+}
+@mixin table {
+  td,
+  th {
+    padding: 7px 15px;
+  }
+}
+@mixin links {
+  &:link {
+    color: $colorLink;
+  }
+
+  &:active {
+    color: darken($colorLink, 5%);
+  }
+
+  &:visited {
+    color: darken($colorLink,10%);
+  }
+
+  &:hover {
+    color: lighten($colorLink,25%);
+    text-decoration: none;
+  }
+}
+
+#content {
+  height: 100%;
+  width: 960px;
+  padding: 25px;
+  margin: 5px auto;
+  background-color: $colorDg;
+
+  h1 {
+    text-align: center;
+    color: $colorHeader;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-transform: $defaultTransformText;
+  }
+
+  h2 {
+    color: $colorHeader;
+    margin: 20px 0;
+  }
+
+  p {
+    margin: 15px 0;
+
+    .img-left {
+      float: left;
+      margin-right: 1.5em;
+      margin-bottom: 0.5em;
+      padding: 2px;
+      border: 1px solid $imgBorderColor;
+    }
+  }
+
+  a {
+    @include links;
+    color: $colorLink;
+  }
+
+  .brief {
+    @include brief;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 1.5em;
+  }
+
+  .img-right {
+    @include image;
+    float: right;
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .img-left {
+    @include image;
+    float: left;
+    margin-right: 1.5em;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-bottom: 45px;
+
+    caption {
+      text-align: right;
+      color: $captionTableColor;
+    }
+
+    tr {
+      @include table;
+
+      th {
+        background-color: $colorTableTh;
+        color: $briefTextColor;
+        text-transform: $transformText;
+        text-align: left;
+        border-right: 1px solid $colorTableBorder;
+        font-weight: normal;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+
+      td {
+        border-bottom: 1px solid $colorTableTh;
+        background-color: $colorTableTd;
+
+        a {
+          color: $colorLink;
+        }
+      }
+    }
+  }
+
+  .contactform {
+    input[type=text],
+    textarea {
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    .name {
+      width: 100%;
+      display: inline-block;
+
+      .fname {
+        float: left;
+        width: 49%;
+      }
+
+      .lname {
+        float: right;
+        width: 49%;
+      }
+    }
+
+    input[type=submit] {
+      width: 180px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 12px;
+      font-size: 1em;
+      background-color: $colorDg;
+      color: $colorReviewForm;
+      border: 1px solid $colorReviewForm;
+      text-transform: $transformText;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      color: lighten($colorLink,25%);
+    }
+
+    label {
+      color: $colorReviewForm;
+      text-transform: $transformText;
+    }
+  }
+}

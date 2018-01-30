@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #dcbb9a;
+  color: #000000; }
+
+#content {
+  height: 100%;
+  width: 960px;
+  padding: 25px;
+  margin: 5px auto;
+  background-color: #ffffff; }
+  #content h1 {
+    text-align: center;
+    color: #893c00;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-transform: none; }
+  #content h2 {
+    color: #893c00;
+    margin: 20px 0; }
+  #content p {
+    margin: 15px 0; }
+    #content p .img-left {
+      float: left;
+      margin-right: 1.5em;
+      margin-bottom: 0.5em;
+      padding: 2px;
+      border: 1px solid #893c00; }
+  #content a {
+    color: #3d70a1; }
+    #content a:link {
+      color: #3d70a1; }
+    #content a:active {
+      color: #36638f; }
+    #content a:visited {
+      color: #2f567c; }
+    #content a:hover {
+      color: #8bafd3;
+      text-decoration: none; }
+  #content .brief {
+    background-color: #fadcba;
+    color: #000000;
+    width: 420px;
+    margin-bottom: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 1.5em; }
+  #content .img-right {
+    padding: 2px;
+    border: 1px solid #893c00;
+    float: right;
+    margin-left: 1.5em;
+    margin-bottom: 0.5em; }
+  #content .img-left {
+    padding: 2px;
+    border: 1px solid #893c00;
+    float: left;
+    margin-right: 1.5em; }
+  #content table {
+    border-collapse: collapse;
+    margin-bottom: 45px; }
+    #content table caption {
+      text-align: right;
+      color: #000000; }
+    #content table tr td,
+    #content table tr th {
+      padding: 7px 15px; }
+    #content table tr th {
+      background-color: #e0e0e0;
+      color: #000000;
+      text-transform: uppercase;
+      text-align: left;
+      border-right: 1px solid #ffffff;
+      font-weight: normal; }
+      #content table tr th:last-child {
+        border-right: none; }
+    #content table tr td {
+      border-bottom: 1px solid #e0e0e0;
+      background-color: #ffffff; }
+      #content table tr td a {
+        color: #3d70a1; }
+  #content .contactform input[type=text],
+  #content .contactform textarea {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; }
+  #content .contactform .name {
+    width: 100%;
+    display: inline-block; }
+    #content .contactform .name .fname {
+      float: left;
+      width: 49%; }
+    #content .contactform .name .lname {
+      float: right;
+      width: 49%; }
+  #content .contactform input[type=submit] {
+    width: 180px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #808080;
+    border: 1px solid #808080;
+    text-transform: uppercase;
+    cursor: pointer; }
+  #content .contactform input[type=submit]:hover {
+    color: #8bafd3; }
+  #content .contactform label {
+    color: #808080;
+    text-transform: uppercase; }
