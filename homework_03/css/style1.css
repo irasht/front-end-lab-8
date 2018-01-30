@@ -83,7 +83,7 @@ body {
       background-color: #ffffff; }
       #content table tr td a {
         color: #3d70a1; }
-  #content .contactform input[type=text],
+  #content .contactform input,
   #content .contactform textarea {
     width: 100%;
     padding: 15px;
@@ -100,7 +100,7 @@ body {
     #content .contactform .name .lname {
       float: right;
       width: 49%; }
-  #content .contactform input[type=submit] {
+  #content .contactform .button {
     width: 180px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -111,7 +111,7 @@ body {
     border: 1px solid #808080;
     text-transform: uppercase;
     cursor: pointer; }
-  #content .contactform input[type=submit]:hover {
+  #content .contactform .button:hover {
     color: #8bafd3; }
   #content .contactform label {
     color: #808080;

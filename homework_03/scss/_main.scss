@@ -143,7 +143,7 @@ body {
   }
 
   .contactform {
-    input[type=text],
+    input,
     textarea {
       width: 100%;
       padding: 15px;
@@ -168,7 +168,7 @@ body {
       }
     }
 
-    input[type=submit] {
+    .button {
       width: 180px;
       margin-top: 5px;
       margin-bottom: 5px;
@@ -181,7 +181,7 @@ body {
       cursor: pointer;
     }
 
-    input[type=submit]:hover {
+    .button:hover {
       color: lighten($colorLink,25%);
     }
 
