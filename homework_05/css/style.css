@@ -1,0 +1,239 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+}
+
+header .container {
+  align-items: center;
+}
+
+header .container .logo {
+  width: 25%;
+  height: auto;
+  margin: 20px 0;
+}
+
+header .container nav {
+  margin: 10px 0 18px;
+}
+
+header .container nav a {
+  margin-right: 17px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+header .container nav a:hover {
+  color: #38c2d7;
+}
+
+main .banner {
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 380px;
+  margin-top: 0;
+}
+
+main .banner .banner-box {
+  width: 34%;
+  margin-top: 60px;
+  line-height: 1.2;
+}
+
+main .banner .banner-box h1 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 37px;
+  padding-left: 20px;
+}
+
+main .news-section .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 23px;
+  margin: 23px auto;
+}
+
+main .news-section .container .news {
+  background-color: #CCC;
+  padding: 13px;
+  width: auto;
+}
+
+main .news-section .container .news:hover {
+  background-color: #39c2d7;
+}
+
+main .news-section .container .news img {
+  width: 100%;
+  height: auto;
+}
+
+main .news-section .container .news h3 {}
+
+main .news-section .container .news p {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #39c2d7;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+}
+
+footer .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container ul li {
+  display: inline-block;
+  margin: 15px 25px 15px 0;
+}
+
+footer .container ul li a {
+  color: #fff;
+}
+
+footer .container ul li a:hover {
+  text-decoration: none;
+}
+
+footer .container p {
+  margin: 15px 0 15px 10px;
+}
+
+/*Tablet styles */
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+  header .container {
+    display: block;
+  }
+  header .container .logo {
+    margin: 20px auto;
+  }
+  header .container nav {
+    margin: 10px auto;
+  }
+  main .banner .banner-box {
+    width: 64%;
+    margin: 50px auto;
+  }
+  main .banner .banner-box h1 {
+    font-size: 25px;
+  }
+  main .news-section {
+    padding: 0 15px;
+  }
+  main .news-section .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: 15px auto;
+  }
+  main .news-section .container .news img {
+    width: 75%;
+    height: auto;
+  }
+  main .news-section .container .news h3 {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 16px;
+  }
+  main .news-section .container .news p {
+    text-align: left;
+  }
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .container ul {
+    padding: 0;
+  }
+  footer .container ul li {
+    margin-bottom: -5px;
+    padding: 0;
+  }
+}
+
+/*Mobile styles */
+
+@media (max-width: 575px) {
+  header .logo img {
+    width: 95%;
+    height: auto;
+    margin: 0;
+  }
+  header .container nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  header nav a {
+    width: 96%;
+    display: block;
+    background-color: #EEE;
+    padding: 15px 0 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #CCC;
+  }
+  header nav a:first-child {
+    border-top: 1px solid #CCC;
+  }
+  main .banner {
+
+    height: 300px;
+    width: 100%;
+  }
+  main .banner .container {
+    width: 90%;
+  }
+  main .banner .container .banner-box {
+    margin-top: 180px;
+    width: 100%;
+    background-color: #39c2d7;
+    text-align: left;
+  }
+  main .banner .container .banner-text h1 {
+    font-size: 17px;
+    padding: 10px;
+  }
+  main .news-section .container {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+  footer ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul li {
+    margin-top: 5px;
+  }
+}
