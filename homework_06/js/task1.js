@@ -16,7 +16,7 @@ if ((side1 * side1 + side2 * side2 == side3 * side3) || (side1 * side1 + side3 *
 if (!(isNaN(side1) || isNaN(side2) || isNaN(side3) || side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1)) {
   var perimeter = (side1 + side2 + side3) / 2;
   var area = Math.sqrt(perimeter * ((perimeter - side1) * (perimeter - side2) * (perimeter - side3)));
-  console.log("Type of triangle is " + triangleType + " triangle and it square is  " + area.toFixed(2));
+  console.log("Type of triangle is " + triangleType + " triangle and it square is  " + parseFloat(area.toFixed(2)));
 } else {
   console.log("Incorrect data!");
 }
