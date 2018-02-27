@@ -1,0 +1,27 @@
+ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+p {
+  display: flex;
+  margin: 0;
+  height: 25px;
+  line-height: 25px;
+}
+
+i {
+  color: rgb(173, 166, 166);
+}
+
+.folder i {
+  color: rgb(249, 245, 32);
+}
+
+.emptyLi {
+  font-style: italic;
+}
+
+p:hover {
+  background-color: rgb(247, 244, 244);
+}
